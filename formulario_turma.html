@@ -5,23 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Turma</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/> 
+    <link href="css/estilo.css" rel="stylesheet"/>
 </head>
 <body>
-    <a href="index03.html">Pagina Inicial</a>
-    <a href="cursos.html">cursos</a>
-    <a href="turmas.html">Turmas</a>
-    <a href="alunos.html">Alunos</a>
-    <a href="professores.html">Professores</a>
-    <a href="formulario_curso.html">Formulário Curso</a>
-    <a href="formulario_aluno.html">Formulário Aluno</a>
-    <a href="formulario_professor.html">Formulário Professor</a>
-
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="index03.html" class="navbar-brand">Sistema Online</a>
+            <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse" aria-controls="menu" aria-expanded="false" aria-label="Nosso Menu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="registro.html" class="nav-link">Registro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cursos.html" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="turmas.html" class="nav-link">Turmas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="alunos.html" class="nav-link">Alunos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="professores.html" class="nav-link">Professores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formulario_curso.html" class="nav-link">Formulário Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index03.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formulario_aluno.html" class="nav-link">Formulário Aluno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formulario_professor.html" class="nav-link">Formulário Professor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <form>
-      
-      
+        
         <div>
             <label for="cursos">Curso</label>
             <select id="cursos" name="cursos">
+
             <option>Selecione</option>
             <option value="windows">Windows</option>
             <option value="Excel">Excel</option>
@@ -31,6 +65,7 @@
         <div>
             <label for="dataInicio">Data Início</label>
             <input type="date" id="dataInicio" name="dataInicio" />
+            <label for="datafim">Data Fim</label>
             <input type="date" id="dataFim" name="dataFim" />
         </div>             
       
@@ -41,8 +76,9 @@
     </div>
 
     <div>
-        <a href="turmas.html">Voltar</a>
+        <a href="turmas.html" class="btn btn-primary">Voltar</a>
     </div>
 
 </body>
+<script src="js/bootstrap.js"></script>
 </html>

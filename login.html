@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professores</title>
+    <title>Login</title>
     <link href="css/bootstrap.css" rel="stylesheet"/> 
     <link href="css/estilo.css" rel="stylesheet"/>
 </head>
@@ -20,7 +20,7 @@
                         <a href="registro.html" class="nav-link">Registro</a>
                     </li>
                     <li class="nav-item">
-                        <a href="login.html" class="nav-link">Login</a>
+                        <a href="index03.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="cursos.html" class="nav-link">Cursos</a>
@@ -32,7 +32,7 @@
                         <a href="alunos.html" class="nav-link">Alunos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index03.html" class="nav-link">Home</a>
+                        <a href="professores.html" class="nav-link">Professores</a>
                     </li>
                     <li class="nav-item">
                         <a href="formulario_curso.html" class="nav-link">Formulário Cursos</a>
@@ -50,41 +50,27 @@
             </div>
         </div>
     </nav>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Telefone</th>
-            </tr>
-        </thead>
-    </table>
-    <table>
-        <tbody>
-            <tr>
-                <td>Luis</td>
-                <td>21-30356978</td>
-                <td><input type="submit" value="Alterar" class="btn btn-secondary"></td>
-                <td><input type="submit" value="Excluir" class="btn btn-danger"></td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>21-987865329</td>
-                <td><input type="submit" value="Alterar" class="btn btn-secondary"></td>
-                <td><input type="submit" value="Excluir" class="btn btn-danger"></td>
-            </tr>
-            <tr>
-                <td>Joao</td>
-                <td>21-33215264</td>
-                <td><input type="submit" value="Alterar" class="btn btn-secondary"></td>
-                <td><input type="submit" value="Excluir" class="btn btn-danger"></td>
-            </tr>
-        </tbody>
-    </table>
 
-    <div>
-        <a href="formulario_professor.html" class="btn btn-primary">Novo Professor</a>
+
+    <div class="container">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="login" class="form-label">Login:</label>
+                    <input type="text" id="login" name="login" class="form-control" placeholder="Nome" required/>
+                </div>
+                <div class="col-md-6">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input type="password" id="password" name="password" placeholder="password" class="form-control" required minlength="6"/>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" value="Entrar" class="btn btn-primary" />
+                    <input type="reset" value="Limpar"  class="btn btn-secondary"/></br>
+                    
+                </div>
+            </div>
+        </form>
     </div>
-
 </body>
 <script src="js/bootstrap.js"></script>
 </html>
