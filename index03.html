@@ -7,9 +7,10 @@
     <title>Sistema Online</title>
     <link href="css/bootstrap.css" rel="stylesheet"/> 
     <link href="css/estilo.css" rel="stylesheet"/>
-
+    
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a href="index03.html" class="navbar-brand">Sistema Online</a>
@@ -56,7 +57,42 @@
         <h2>Sistema de Controle Acadêmico Online</h2>
         <p>Bem Vindo ao nosso sistema.</p>
     </div>
+
+    <div class="modal" id="mensagem">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Sistema Acadêmico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar" onclick="fechar()"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bem Vindo ao sistema.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="fechar()">ok</button>
+                    <p>Volte Sempre</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-    <script src="js/bootstrap.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script>
+
+    abrirTela();
+
+    function abrirTela(){
+    tela = document.getElementById("mensagem");
+
+    tela.style.display = "block";
+
+    }
+    function fechar(){
+        tela = document.getElementById("mensagem");
+        tela.style.display = "none";
+    }
+    
+</script>
 
 </html>

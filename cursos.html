@@ -67,19 +67,19 @@
                         <td>Python</td>
                         <td>R$300,00</td>
                         <td><input type="submit" value="Alterar" class="btn btn-secondary"></td>
-                        <td><input type="submit" value="Excluir" class="btn btn-danger"></td>
+                        <td><input type="submit" value="Excluir" class="btn btn-danger" onclick="abrirTela()"></td>
                     </tr>
                     <tr>
                         <td>CSS</td>
                         <td>R$500,00</td>
                         <td><input type="submit" value="Alterar" class="btn btn-secondary"></td>
-                        <td><input type="submit" value="Excluir" class="btn btn-danger"></td>
+                        <td><input type="submit" value="Excluir" class="btn btn-danger" onclick="abrirTela()"></td>
                     </tr>
                     <tr>
                         <td>HTML</td>
                         <td>R$450,00</td>
                         <td><input type="submit" value="Alterar" class="btn btn-secondary"></td>
-                        <td><input type="submit" value="Excluir" class="btn btn-danger"></td>
+                        <td><input type="submit" value="Excluir" class="btn btn-danger" onclick="abrirTela()"></td>
                     </tr>
                 </tbody>
             </table>
@@ -87,6 +87,43 @@
                 <a href="formulario_turma.html" class="btn btn-primary">Novo Curso</a>
             </div>
         </div>
+        <div class="modal" id="mensagem">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Excluir Curso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar" onclick="fechar()"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Deseja Excluir esse Registro?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="fechar()">SIM</button>
+                        <button type="button" class="btn btn-danger" onclick="fechar2()">NÃO</button>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 <script src="js/bootstrap.js"></script>
+<script>
+
+    function fechar2(){
+        tela = document.getElementById("mensagem");
+        tela.style.display = "none";
+    }
+    
+    function abrirTela(){
+    tela = document.getElementById("mensagem");
+
+    tela.style.display = "block";
+
+    }
+    function fechar(){
+        alert("Excluído")
+        fechar2()
+    }
+    
+</script>
 </html>
